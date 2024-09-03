@@ -3,6 +3,8 @@ import os
 from pathlib import Path
 from pytube import YouTube
 
+#bot for take music from YouTube
+
 link = input()
 name = input()
 yt = YouTube(link)
