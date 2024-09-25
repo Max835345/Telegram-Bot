@@ -14,4 +14,3 @@ video = moviepy.editor.VideoFileClip(f'{video_file}')
 audio = video.audio
 audio.write_audiofile(f'{video_file}.mp3')
 os.rename(f'{name}.mp4.mp3',f'{name}.mp3')
-
