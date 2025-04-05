@@ -10,7 +10,6 @@ yt = YouTube(link)
 streams = yt.streams
 vd = streams.filter(progressive=True).desc().first().download(filename=f"{name}.mp4")
 
-
 video_file = Path(f'{name}.mp4')
 video = moviepy.editor.VideoFileClip(f'{video_file}')
 audio = video.audio
